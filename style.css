@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+
+  
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.btn {
+  background-color: #04364a;
+  color: white;
+  border: 1px solid #04364a;
+  padding: 10px;
+  font-size: medium;
+  cursor: pointer;
+}
+/* BANNER START */
+.banner {
+  width: 100%;
+  height: 90vh;
+  background-color: gray;
+  background-image: url("./images/banner.jpg");
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*HEADER START */
+header {
+  display: flex;
+  gap: 30rem;
+  justify-content: start;
+  margin: 50px 200px 0;
+}
+.logo .btn {
+  background-color: #04364a;
+  color: white;
+  border: 1px solid #04364a;
+  padding: 10px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.navbar {
+  margin-right: 50rem;
+}
+/*MEDIAQUERIES OF HEADER */
+@media screen and (max-width: 1220px) {
+  header {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 50px 50px 30px;
+    margin-left: 90px;
+    transition: all 0.8sn;
+  }
+  .navbar {
+    margin-right: 60rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  header {
+    gap: 20rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    gap: 20rem;
+  }
+}
+@media screen and (max-width: 965px) {
+  header {
+    gap: 15rem;
+  }
+}
+@media screen and (max-width: 877px) {
+  header {
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+    margin: 50px 400px 40px;
+    margin-left: 80px;
+    transition: all 0.8sn;
+  }
+}
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navbar-items li a {
+  color: black;
+}
+/*HEADER END */
+/* SECTION BANNER START */
+
+.section-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  gap: 20px;
+}
+.banner-title h5 {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: lightgrey;
+  font-family: "poppins";
+  font-size: 20px;
+  border-radius: 10px;
+  color: darkolivegreen;
+}
+.section-banner h1 {
+  font-size: 50px;
+  color: white;
+}
+
+/*MEDIAQUERIES OF BANNER */
+@media screen and (max-width: 1400px) {
+  .section-banner {
+    padding: 9rem;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .section-banner {
+    padding: 8rem;
+  }
+}
+@media screen and (max-width: 1016px) {
+  .section-banner {
+    padding: 7rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .section-banner {
+    padding: 6rem;
+  }
+}
+/* SECTION BANNER END */
+/* SECTION RESERVE START */
+.reserve-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+.reserve-container .inputs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  opacity: 0.8;
+  color: darkolivegreen;
+  gap: 20px;
+  padding: 25px;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+.last {
+  display: flex; 
+  gap: 10px;
+}
+.first {
+    display: flex; 
+    gap: 10px;
+  }
+
+  @media screen and (max-width:1050px) {
+    .card-part {
+        background-color: aqua;
+        display:grid;
+        grid-template-columns: repeat(2,1f);
+
+    }
+    
+}
+
+/*MEDIAQUERIES OF RESERVE */
+@media screen and (max-width: 1016px) {
+  
+  .inp {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+        gap: 10px;
+  }
+  .last {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .short-title {
+    word-spacing: 10px;
+    font-size: 20px;
+    color: darkolivegreen;
+    margin-top: 100px;
+    text-indent: 20px;
+    
+  }
+
+
+
+
+}
+
+
+/* SECTION RESERVE END */
+
+/* TITLE START */
+.short-title {
+  word-spacing: 10px;
+  font-size: 20px;
+  color: darkolivegreen;
+  padding: 50px 200px;
+  text-indent: 20px;
+}
+/* TITLE END */
+
+/* MAIN SECTION START */
+.cards {
+  background-color: #f9f9f9;
+}
+.cards .card-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+.suit-cards {
+  background-color: white;
+  margin-left: 20px;
+}
+.card-title h4 {
+  font-size: xx-large;
+  color: rgb(44, 54, 27);
+}
+.card-title h6 {
+  color: darkolivegreen;
+  font-size: larger;
+}
+.card-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card-image img {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card-image img:hover {
+  transform: scale(1.2);
+}
+
+.roomCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+  justify-content: center;
+}
+.roomCard h4,
+h5 {
+  font-size: larger;
+}
+
+
+/* MAIN SECTION END */
+/* SUCSCRİBE SECTION START */
+.subscribe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+  padding: 8%;
+  background-image: url(./images/banner2.jpg);
+  color: white;
+}
+.subscribe-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.travel {
+  width: 8rem;
+}
+.subscribe-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.subscribe-input h5 {
+  font-size: x-large;
+}
+.subscribe-input input {
+    color: #04364a ;
+  border: 1px solid #04364a;
+  padding: 10px;
+  font-size: medium;
+  cursor: pointer;
+}
+.sbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+/* SUCSCRİBE SECTION END */
+/* FOODS SECTION START */
+.foods {
+  background-image: url(./images/restaurant.jpg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px 15%;
+}
+.food-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  width: 65%;
+  gap: 15px;
+}
+/* FOODS SECTION END */
+/* PREMIUM ROOMS SECTION START  */
+.rooms {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.room-header {
+  padding: 5%;
+  font-size: larger;
+  text-align: center;
+}
+.room-header p {
+  padding: 2%;
+  font-size: medium;
+}
+.room {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 2rem;
+}
+.vertical-image {
+  width: 40%;
+  overflow: hidden;
+  margin-left: 20rem;
+}
+.vertical-img {
+  width: 100%;
+  height: 100%;
+}
+.room-card {
+  width: 80%;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  background-color: white;
+}
+.card-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.card-in .btn {
+  width: 18rem;
+  height: 3rem;
+}
+
+/* PREMIUM ROOMS SECTION END  */
+
+/* GALLERY SECTION START  */
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 15%;
+  background-color: black;
+  gap: 5px;
+}
+
+.gallery-image img {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.gallery-image img:hover {
+  opacity: 1;
+}
+@media screen and (max-width:1050px) {
+    .images {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px 15%;
+        background-color: black;
+        gap: 5px;
+      }
+}
+
+/* GALLERY SECTION END  */
