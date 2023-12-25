@@ -4,4 +4,4 @@
 
 Html,CSS kullanıldı.
 
-<img src="./travel.gif" alt="
+![](./travel.gif)
